@@ -12,3 +12,4 @@ nth_term=a+(n-1)*d
 Sn=(n/2)*((2*a) + (n-1)*d)
 
 print(F"the nth term is:{nth_term}")
+print(f"the Sn is:{Sn}")
