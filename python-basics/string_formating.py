@@ -19,7 +19,6 @@ print(f"the first subject is:",split[0])
 mpesa_code="ubcl26abmr"
 
 capitalised=mpesa_code.upper()
-
 print("new mpesa code:",capitalised)
 
 #make everything small
