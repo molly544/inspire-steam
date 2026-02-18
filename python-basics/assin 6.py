@@ -9,12 +9,14 @@ def print_triangle(n):
 
 def print_diamond(n):
     """print a diamond of asterisks"""
-    #print top half of diamond
+    #print upper half of (diamond)
     for i in range(n):
         print(''*(n-i-1)+'*'*(2*i+1))
-    #print bottom half of diamond
+    #print lower half of (diamond)
     for i in range(n-2,-1,-1):
         print(''*(n-i-1)+'*'*(2*i+1))
+
+
 
 def main():
     n=int(input("enter the size of the triangle/diamond"))
