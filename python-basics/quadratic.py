@@ -15,7 +15,7 @@ def solve_quadratic(a,b,c):
 
     elif discriminant==0:
         root=-b/2*a
-        return f"onr repeated root:{root}"
+        return f"one repeated root:{root}"
 
     else:
         real_part=-b/(2*a)
