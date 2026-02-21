@@ -33,6 +33,6 @@ Lexie.city="Mombasa"
 Rose.city="Malindi"
 
 print(f"Lexie's location:",Lexie.city)
-print(f"Rose's location:",Lexie.city)
+print(f"Rose's location:",Rose.city)
 
         
