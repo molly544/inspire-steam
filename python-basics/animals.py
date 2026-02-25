@@ -2,50 +2,43 @@
 #23/02/2026
 #programme to show inheritance in python
 
-
 class Animal():
-    def __init__(self,colour,weight,food):
+
+    def __init__(self,species,weight,food):
         self.species = species
         self.weight = weight
         self.food = food
-        
 
-    def self(self,weight):
-        
-        print(f"the animal weighs {weight}")
-    
-    
-    def eat(self,food):
-        print("the animal eats {food}")
-
-
-class Dog():
-    def __init__(self,species,weight,food):
-        super().__init__(species,weight,food)
-        self.colour= colour
-        self.breed = breed
-        self.weight = weight
-        self.foof = food
     def grow(self,weight):
-        weight=1.1*weight
-        print(f"the animal weighs {weight}")
-    
-    def eat(self,food):
-        print("the animal eats {food}")
-    def barks(self,):
-        print("the dog says woof woof")
+        weight = 1.1 * weight 
+        print(f"The animal weight {weight } kgs")
 
-class Horse():
-    def __init__(self,species,weight,food):
-        self.colour = colour
+    def eat(self ,food):
+        print(f"The animal eats {food}")
+
+
+
+class Dog(Animal):
+
+    def __init__(self,color,height,breed):
+        super().__init__(species,weight,food)
+        self.color = color
+        self.height = height
         self.breed = breed
+
+    
+    def barks(self):
+        print("The dog says woof woof")
+
+
+
+class Horse(Animal):
+
+    def __init__(self,species,weight,food):
+        self.species = species
         self.weight = weight
         self.food = food
-    def grow(self,weight):
-        weight=1.1*weight
-        print(f"the animal weighs {weight}")
-    
-    
-    def eat(self,food):
-        print("the animal eats {food}")
 
+    
+    def neighs(self ):
+        print("The horse says neigh neigh")
