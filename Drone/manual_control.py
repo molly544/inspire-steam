@@ -1,6 +1,7 @@
 from pysimverse import Drone
 import time
 import cv2
+import keyboard
 
 drone = Drone()
 drone.connect()
@@ -10,7 +11,7 @@ drone.take_off(6)
 rc_speed=200
 
 while True:
-    Key = cv2.waitKey(1)&0xff
+    Key = keyboard.read_key()
 
     #get all values to zero 
     left_right = 0
@@ -18,33 +19,33 @@ while True:
     up_down = 0
     yaw = 0
 
-    if Key==ord("w"):
+    if key=="w":
         forward_backward=rc_speed
 
-    elif Key==ord("s"):
+    elif key=="s":
         
         forward_backward = rc_speed
 
-    elif Key==ord("a"):
+    elif key=="a":
         left_right = rc_speed 
 
-    elif Key==ord("d"):
+    elif key=="d":
         left_right = rc_speed
 
     
-    elif Key==ord("f"):
+    elif key=="f":
         up_down = rc_speed 
 
-    elif Key==ord("c"):
+    elif Key=="c":
         up_down = rc_speed 
 
-    elif Key==ord("e"):
+    elif key=="e":
         yaw = 1
 
-    elif Key==ord("e"):
+    elif key=="e":
         yaw = 1
 
-    elif Key==ord("1") or Key==27:
+    elif key=="1" or Key==27:
         drone.land()
         time.sleep(2)
         break
