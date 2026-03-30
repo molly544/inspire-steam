@@ -19,17 +19,6 @@ once this problem is solved, the final speed of the Ninja character should be 40
 
 In both cases use the report_status methods to verify of damages are done
 '''
-100
-#Click or react
-#thumbsup
-#Click or react
-#thumbsdown
-#Click or react
-print("Add Reaction")
-#Reply
-#Forward
-#More
- #[10:24]Thursday, 19 February 2026 10:24
 class FighterCharacter:
 
     def __init__ (self, role, health, damage, speed):
